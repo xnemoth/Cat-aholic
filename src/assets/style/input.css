@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Popins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  & .header {
+    & h1 {
+      word-spacing: 3rem;
+      font-size: 48px;
+    }
+    & .head__menu {
+      & button {
+        &.active {
+          color: theme("colors.pastelBlue");
+          background-color: theme("colors.pastelPink");
+        }
+      }
+    }
+  }
+}
